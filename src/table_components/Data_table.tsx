@@ -251,7 +251,7 @@ const DataTable: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://3.109.54.46/api/v1/item');
+        const response = await axios.get('https://cors-anywhere-production-40ac.up.railway.app/http://3.109.54.46/api/v1/item');
         setData(response.data);
         setLoading(false);
       } catch (error) {
