@@ -103,7 +103,7 @@ const InventoryForm = () => {
       });
     }
     try {
-      await axios.post('http://3.109.54.46/api/v1/item', formDataToSend, {
+      await axios.post('https://cors-anywhere-production-40ac.up.railway.app/http://3.109.54.46/api/v1/item', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         }

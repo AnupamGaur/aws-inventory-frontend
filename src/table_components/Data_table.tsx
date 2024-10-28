@@ -230,7 +230,7 @@ const DataTable: React.FC = () => {
 
                 <div className="flex justify-end gap-2">
                   <Button onClick={async () => {
-                    await axios.put('http://3.109.54.46/api/v1/item', {
+                    await axios.put('https://cors-anywhere-production-40ac.up.railway.app/http://3.109.54.46/api/v1/item', {
                       updated_stock: finalStock,
                       id: row.id
                     })
@@ -266,7 +266,7 @@ const DataTable: React.FC = () => {
   // Handle bulk delete
   const handleBulkDelete = async () => {
     try {
-      await axios.delete('http://3.109.54.46/api/v1/item', {
+      await axios.delete('https://cors-anywhere-production-40ac.up.railway.app/http://3.109.54.46/api/v1/item', {
         data: { item_ids: selectedRows }
       });
 

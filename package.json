@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": ""
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.2",
@@ -29,6 +30,7 @@
     "react-day-picker": "^8.10.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
+    "serve": "^14.2.4",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },

@@ -78,7 +78,7 @@ const Updateform = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.put(`http://3.109.54.46/api/v1/item/${id}`, {
+      await axios.put(`https://cors-anywhere-production-40ac.up.railway.app/http://3.109.54.46/api/v1/item/${id}`, {
         formData,
       });
       navigate('/');
