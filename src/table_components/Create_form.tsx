@@ -98,7 +98,7 @@ const InventoryForm = () => {
       formDataToSend.append(key, String(value));
     });
     if (selectedImage) {
-      selectedImage.forEach((image, index) => {
+      selectedImage.forEach((image) => {
         formDataToSend.append('img', image);
       });
     }

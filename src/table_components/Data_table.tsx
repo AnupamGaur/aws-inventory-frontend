@@ -10,8 +10,8 @@ import {
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
+
+
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -21,13 +21,13 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Trash2, X } from "lucide-react";
 import axios from "axios";
 import { Edit2Icon } from 'lucide-react'
-import StockAdjustmentModal from "./Update_stock";
+
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroupItem } from "@radix-ui/react-radio-group";
 import { RadioGroup } from "@/components/ui/radio-group";
-import Link, { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 // Define basic interfaces
 
 

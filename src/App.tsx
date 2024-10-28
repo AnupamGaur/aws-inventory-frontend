@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Button } from './components/ui/button'
 import DataTable from './table_components/Data_table'
 import Create_form from './table_components/Create_form'
 import Update_form from './table_components/Update_form'
