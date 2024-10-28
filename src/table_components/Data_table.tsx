@@ -267,7 +267,13 @@ const DataTable: React.FC = () => {
   const handleBulkDelete = async () => {
     try {
       await axios.delete('https://cors-anywhere-production-40ac.up.railway.app/http://3.109.54.46/api/v1/item', {
-        data: { item_ids: selectedRows }
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        },
+        data: { 
+          item_ids: selectedRows 
+        }
       });
 
       setData(data.filter(item => !selectedRows.includes(item.id)));
